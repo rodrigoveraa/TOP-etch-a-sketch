@@ -1,0 +1,22 @@
+.main-container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.grid-row {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+.grid-square {
+    border: 0.5px solid lightgrey;
+    flex: auto;
+}
+
+.black-background {
+    background-color: black;
+}
