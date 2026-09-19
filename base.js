@@ -11,9 +11,13 @@ for (let i = 0; i < GRID_HEIGHT; i++) {
     for (let j = 0; j < GRID_WIDTH; j++) {
         const newSquare = document.createElement("div");
         newSquare.classList.add("grid-square");
+        newSquare.addEventListener("mouseover", function (e) {
+            e.target.classList.add("black-background");
+        });
 
         newRow.appendChild(newSquare);
         
     }
     
 }
+
