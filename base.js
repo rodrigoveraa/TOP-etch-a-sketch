@@ -1,6 +1,10 @@
 const MAX_SQUARES_PER_SIDE = 100;
 
-const mainContainer = document.querySelector(".main-container")
+const mainContainer = document.querySelector(".main-container");
+
+const newGridButton = document.querySelector(".top-button");
+
+
 
 function clearGrid() {
     mainContainer.replaceChildren();
@@ -32,6 +36,15 @@ function createGrid(squaresPerSide) {
     
 
 }
+
+function createNewGrid() {
+    clearGrid();
+    const newGridSquaresPerSide = Number(prompt("How many squares per side?"));
+    createGrid(newGridSquaresPerSide);
+
+}
+
+newGridButton.addEventListener("click", createNewGrid);
 
 clearGrid();
 
